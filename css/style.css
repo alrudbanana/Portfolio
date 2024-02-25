@@ -71,6 +71,9 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Noto Sans KR", sans-serif;
     text-align: right;
 }
+.intro .intro-desc p{
+    margin: 0;
+}
 /* -----------------------about */
 .about-me{
     /* border: 1px solid red; */
@@ -219,4 +222,60 @@ h1,h2,h3,h4,h5,h6{
 .web .portfolio-content .portfolio-detail .detail-button a:hover{
     background-color: #2B49E9;
     color: #fff;
+}
+.web  p{
+    position: relative;
+}
+.web  p.on{
+    color: #2B49E9;
+    font-weight: 500;
+}
+.web  p.on:after{
+    content:'';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    background-color: rgba(43, 72, 233, 0.505);
+    position: absolute;
+    top: 0;
+    left: -5%;
+}
+.web .portfolio-content .portfolioWrapClone{
+    gap: 0 30px;
+    align-items: flex-end;
+    display: none;
+}
+.web .portfolio-content .portfolioWrapClone.on{
+    display: flex;
+}
+/* --------3. full stack  */
+.web .portfolio-content .portfolioWrapBack{
+    gap: 0 30px;
+    align-items: flex-end;
+    /* display: none; */
+} 
+
+/* -------4. footer */
+footer{
+    margin-top: 100px;
+    padding: 50px 30px;
+    background-color: #2B49E9;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 20px;
+}
+footer .down_button a{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;  
+    transition: background-color 0.3s;
+}
+footer .down_button a:hover{
+    background-color: #fff;
+    color: #000;
 }
